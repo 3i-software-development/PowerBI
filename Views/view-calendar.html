@@ -1,0 +1,31 @@
+﻿<div class="modal-header" style="background-color:white">
+    <button type="button" class="close-modal" data-dismiss="modal" aria-hidden="true" ng-click="cancel()">
+    </button>
+    <i class="fa fa-edit pt5 fs16 black"></i>
+    <span class="modal-title black" id="modal-title">
+        {{'CONTRACT_TITLE_SALES_DATE' | translate}} {{date}}
+    </span>
+</div>
+<div class="modal-body" id="modal-body" style="min-height: 500px">
+    <div class="portlet-body form">
+        <table class="table dataTable table-hover"
+               datatable
+               dt-options="dtOptions"
+               dt-columns="dtColumns"
+               dt-instance="dtInstance"
+               id="tblDataContractCalendar"></table>
+    </div>
+</div>
+<div class="modal-footer">
+    <div class="form-group">
+        <div class="col-md-12 p-0">
+            <div class="btn-group actions pull-right d-flex">
+                <div class="text-center pl10 pt10 margin-right-10" ng-click="exportExcel()">
+                    <a class="">
+                        <span><i class="fas fa-file-excel fs30"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
